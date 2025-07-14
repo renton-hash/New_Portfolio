@@ -4,7 +4,7 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen flex items-center justify-center py-16 px-4 sm:px-6 lg:px-8 "
+      className="min-h-screen flex items-center justify-center py-16 px-4"
     >
       <OnScroll>
         <div className="w-full max-w-md md:max-w-xl lg:max-w-2xl">
