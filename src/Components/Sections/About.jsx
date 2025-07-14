@@ -3,6 +3,7 @@ export const About = () => {
 
     const frontendSkills = [
             "React",
+            "Nextjs",
             "Typescript",
             "TailwindCSS",
             "WordPress",

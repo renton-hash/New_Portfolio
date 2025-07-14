@@ -49,7 +49,7 @@ return(
     An ongoing project which will function as an intermediary between buyers and sellers
  </p>
     <div>
-        {["React", "Typescript", "TailwindCSS"].map((tech, key) => {
+        {["Nextjs", "Typescript", "TailwindCSS"].map((tech, key) => {
 
 return(
     <span 
