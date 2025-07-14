@@ -16,7 +16,7 @@ const App = () => {
     <>
       {!isLoaded && <ScreenLoad onComplete={() => setIsLoaded(true)} />}
       {isLoaded && (
-        <div className="text-white text-center mt-10">
+        <div className="text-white text-center -mt-52">
           {" "}
           <div className={`min-h-screen transition-opacity duration-700 ${
             isLoaded ? "opacity-100": "opacity-0"} bg-black text-gray-100`}></div>

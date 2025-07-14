@@ -10,7 +10,8 @@ export const About = () => {
     
     return (
 
-        <section id="about" className="min-h-[60vh] flex items-center justify-center py-20"
+        <section id="about" 
+        className="min-h-screen -mt-48 flex items-center justify-center py-20"
         >
 <OnScroll>
         <div className="max-w-3xl mx-auto px-4">

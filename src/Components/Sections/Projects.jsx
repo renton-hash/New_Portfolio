@@ -13,13 +13,13 @@ Featured Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols gap-6">
 <div className="p-6 rounded-xl border-white/10 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
-<h3 className="text-xl font-bold mb-2"> Bethany Shop</h3>
+<h3 className="text-xl font-bold mb-2">giantstepstrasjoschool</h3>
  <p className="text-gray-400 mb-4">
 
-    User friendly platform website for a baking store.
+    A school website page layout
  </p>
     <div>
-        {["HTML5", "CSS3", "Javascript"].map((tech, key) => {
+        {["WordPress", "Elementor", "CSS3"].map((tech, key) => {
 
 return(
     <span 
@@ -33,11 +33,11 @@ return(
     </div>
 
     <div className="flex justify-between items-center">
-        <a href="#" 
+        <a href="https://giantstepstrasjoschool.com " 
         className="text-blue-400 hover:text-blue-300 transition-colors my-4
         ">
             {" "}
-            View Projects {" "} </a>
+            View Project {" "} </a>
             </div>
 </div>
         </div>
