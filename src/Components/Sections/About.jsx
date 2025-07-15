@@ -24,32 +24,30 @@ export const About = () => {
         <div className="rounded-xl p-8 overflow-hidden border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
                 A passionate self-taught developer with over 4 years expertise in 
-                building scalable web applications and creating innovation solutions.
+                building scalable web applications and creating innovative solutions.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-6">
-            <div className="rounded-xl p- hover:-translate-y-1 transition-all flex flex-col items-center justify-center text-center">
-                <h3 className="text-xl font-bold mb-4">Frontend</h3>
-            <div className="flex-row overflow-x-auto items-center gap-2">
-                {frontendSkills.map((tech, key) => {
-                    return(
-                    <span 
-                    key={key} 
-                    className="bg-blue-500/10 text-blue-500 py-1 px-3  rounded-full text-sm 
-                    hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition">
-                            {tech}
-                    </span>
-                    );
-                })}
-            </div>
-            </div>
-
-            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-6 px-4 sm:px-6 lg:px-8">
+  <div className="rounded-xl p-4 sm:p-6 hover:-translate-y-1 transition-all flex flex-col items-center justify-center text-center bg-white dark:bg-neutral-900 shadow-sm w-full">
+    <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4">Frontend</h3>
+    <div className="flex flex-wrap justify-center gap-2 sm:gap-3 w-full">
+      {frontendSkills.map((tech, key) => (
+        <span
+          key={key}
+          className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-xs sm:text-sm
+          hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition whitespace-nowrap"
+        >
+          {tech}
+        </span>
+      ))}
+    </div>
+  </div>
+</div>
 
 
 
         </div>
-{/* The certification is not ready even though I am a self taught developer */}
+{/* The certification is not ready even though I am a self-taught developer */}
       <div className="grid-cols-2 overflow-hidden gap-6 mt-8">
     
     {/*<div className="p-2 rounded-xl border-white/10 border 
