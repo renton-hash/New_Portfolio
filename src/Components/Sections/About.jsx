@@ -56,7 +56,7 @@ export const About = () => {
 
     </div>
     */}
-    <div className=" grid grid-col p-2 rounded-xl border-white/10 border 
+    <div className=" grid grid-col p-2 overflow-hidden rounded-xl border-white/10 border 
     hover:-translate-y-1 transition-all">
 <h3 className="text-xl text-center font-bold mb-4">Work Experience</h3>
 <div className="space-y-4 text-gray-300">
