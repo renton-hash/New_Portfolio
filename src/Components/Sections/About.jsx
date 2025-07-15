@@ -12,7 +12,7 @@ export const About = () => {
     return (
 
         <section id="about" 
-        className="min-h-screen overflow-x-hidden -mt-48 flex items-center justify-center py-20"
+        className="min-h-screen -mt-48 flex items-center justify-center py-20"
         >
 <OnScroll>
         <div className="max-w-3xl mx-auto px-4">
