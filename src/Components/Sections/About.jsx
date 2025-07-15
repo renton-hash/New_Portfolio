@@ -50,7 +50,7 @@ export const About = () => {
 
         </div>
 {/* The certification is not ready even though I am a self taught developer */}
-      <div className="grid grid-cols-2 overflow-hidden gap-6 mt-8">
+      <div className="grid-cols-2 overflow-hidden gap-6 mt-8">
     
     {/*<div className="p-2 rounded-xl border-white/10 border 
     hover:-translate-y-1 transition-all">
