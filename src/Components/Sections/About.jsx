@@ -28,9 +28,9 @@ export const About = () => {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-6">
-            <div className="rounded-xl p-6 hover:-translate-y-1 transition-all flex flex-col items-center justify-center text-center">
+            <div className="rounded-xl p- hover:-translate-y-1 transition-all flex flex-col items-center justify-center text-center">
                 <h3 className="text-xl font-bold mb-4">Frontend</h3>
-            <div className="flex-row overflow-auto items-center gap-2">
+            <div className="flex-row overflow-x-auto items-center gap-2">
                 {frontendSkills.map((tech, key) => {
                     return(
                     <span 
