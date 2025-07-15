@@ -28,7 +28,7 @@ export const About = () => {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-6 px-4 sm:px-6 lg:px-8">
-  <div className="rounded-xl p-4 sm:p-6 hover:-translate-y-1 transition-all flex flex-col items-center justify-center text-center bg-white dark:bg-neutral-900 shadow-sm w-full">
+  <div className="rounded-xl p-4 sm:p-6 hover:-translate-y-1 transition-all flex flex-col items-center justify-center text-center dark:bg-neutral-900 shadow-sm w-full">
     <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4">Frontend</h3>
     <div className="flex flex-wrap justify-center gap-2 sm:gap-3 w-full">
       {frontendSkills.map((tech, key) => (
