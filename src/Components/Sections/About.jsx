@@ -12,7 +12,7 @@ export const About = () => {
     return (
 
         <section id="about" 
-        className="min-h-screen -mt-48 flex items-center justify-center py-20"
+        className="min-h-screen overflow-x-hidden -mt-48 flex items-center justify-center py-20"
         >
 <OnScroll>
         <div className="max-w-3xl mx-auto px-4">
@@ -21,16 +21,16 @@ export const About = () => {
         About Me
         </h2>
 
-        <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
+        <div className="rounded-xl p-8 overflow-hidden border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
-                A passionate developer with over 2 years expertise in 
+                A passionate self-taught developer with over 4 years expertise in 
                 building scalable web applications and creating innovation solutions.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center overflow-hidden gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-6">
             <div className="rounded-xl p-6 hover:-translate-y-1 transition-all flex flex-col items-center justify-center text-center">
                 <h3 className="text-xl font-bold mb-4">Frontend</h3>
-            <div className="flex flex-row items-center gap-2">
+            <div className="flex-row items-center gap-2">
                 {frontendSkills.map((tech, key) => {
                     return(
                     <span 
@@ -50,7 +50,7 @@ export const About = () => {
 
         </div>
 {/* The certification is not ready even though I am a self taught developer */}
-      <div className="grid grid-cols-2 gap-6 ml-32 mt-8">
+      <div className="grid-cols-2 gap-6 mt-8">
     
     {/*<div className="p-2 rounded-xl border-white/10 border 
     hover:-translate-y-1 transition-all">
@@ -75,7 +75,7 @@ export const About = () => {
 
  <div>
  
- <h4 className="font-semibold">WordPress Intern at Knopee Technologies (2023 - Present) </h4>
+ <h4 className="font-semibold">WordPress Intern at Knopee Technologies (2023 - 2024) </h4>
  <p>Designing and managing clients websites.</p>
    
  </div>
