@@ -69,13 +69,13 @@ export const About = () => {
  </div>
 
  <div>
- <h4 className="font-semibold">Frontend Developer (Intern) at doyenify Academy (2024 - 2025) </h4>
+ <h4 className="font-semibold">Frontend Developer (Intern/Entry Level) at doyenify Academy (2024 - 2025) </h4>
  <p>Developing and Implementing UI/UX designs with react, typescript and TailwindCSS</p>
  </div>
 
  <div>
  
- <h4 className="font-semibold">WordPress Intern at Knopee Technologies (2023 - 2024) </h4>
+ <h4 className="font-semibold">WordPress (Intern/Entry Level) at Knopee Technologies (2023 - 2025) </h4>
  <p>Designing and managing clients websites.</p>
    
  </div>
