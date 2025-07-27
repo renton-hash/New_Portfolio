@@ -54,7 +54,7 @@ export const Contact = () => {
             </button>
           </form>
                   <div>
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-center bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+          <h2 className="text-3xl mt-12 sm:text-4xl font-bold mb-6 text-center bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
             Phone Contact
           </h2>
             <a href="https://wa.me/+2348034605554
