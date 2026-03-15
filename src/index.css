@@ -1,16 +1,26 @@
 @import "tailwindcss";
 
+/* Global Styles */
 html,
 body {
   margin: 0;
   padding: 0;
   font-family: "Space Grotesk", sans-serif;
-  background-color: black;
-  color: white;
+  background-color: #0f172a; /* Professional dark slate */
+  color: #e2e8f0; /* Soft white */
+  line-height: 1.6;
+  scroll-behavior: smooth;
+
+  /* Font rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Custom utilities via Tailwind's layer system */
+
+/* Custom utilities via Tailwind layer */
 @layer utilities {
+
+  /* Cursor Blink Animation */
   @keyframes blink {
     0%, 100% {
       opacity: 1;
@@ -21,30 +31,51 @@ body {
   }
 
   .animate-blink {
-    animation: blink 0.8s step-end infinite;
+    animation: blink 1s step-end infinite;
   }
 
+
+  /* Loading Progress Bar */
   @keyframes loading {
     0% {
       transform: translateX(-100%);
     }
     100% {
-      transform: translateX(250%);
+      transform: translateX(300%);
     }
   }
 
   .animate-loading-bar {
-    animation: loading 0.8s ease infinite;
+    animation: loading 1s ease-in-out infinite;
+  }
+
+
+  /* Smooth Fade In */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(25px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-up {
+    animation: fadeInUp 0.8s ease forwards;
   }
 }
 
+
+/* Scroll Reveal Effect */
 .scroll {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: translateY(25px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 .scroll.visible {
   opacity: 1;
-  transform:translateY(0);
+  transform: translateY(0);
 }
