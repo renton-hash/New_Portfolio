@@ -1,5 +1,5 @@
 import { OnScroll } from "./OnScroll";
-import "./Projects.css";
+import "./projects.css";
 
 const projects = [
   {

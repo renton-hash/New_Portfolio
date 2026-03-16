@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import "./Home.css";
-import profilePhoto from "../../images/Assets/ProfileP.png"; 
+import profilePhoto from "../../assets/ProfileP.png"; 
 export const Home = () => {
   useEffect(() => {
     const link = document.createElement("link");
