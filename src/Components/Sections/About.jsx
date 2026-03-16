@@ -39,7 +39,7 @@ export const About = () => {
           </h2>
 
           <p className="about-bio">
-            A passionate self-taught fullstack developer with over 3 years of expertise
+            A passionate and dedicated fullstack developer with over 3 years of expertise
             building scalable web applications and crafting innovative,
             user-centered solutions from the ground up.
           </p>
