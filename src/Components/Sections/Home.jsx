@@ -1,6 +1,6 @@
 import { useEffect } from "react"
 import "./Home.css";
-import profilePhoto from "../../images/Assets/nano-banana-2025-09-24T13-26-45.png"; // 👈 replace with your actual filename
+import profilePhoto from "../../images/Assets/nano-banana-2025-09-24T13-26-45.png";
 
 export const Home = () => {
   useEffect(() => {
