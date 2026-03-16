@@ -19,7 +19,7 @@ export const About = () => {
       role: "WordPress Developer — Mid-Level",
       company: "Knopee Technologies",
       desc: "Designed and managed client websites with WordPress,php, and CSS.",
-      current: true,
+      current: false,
     },
   ];
 
