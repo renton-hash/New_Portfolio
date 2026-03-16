@@ -21,6 +21,13 @@ export const About = () => {
       desc: "Designed and managed client websites with WordPress,php, and CSS.",
       current: false,
     },
+     {
+    period: "May, 2021 — August, 2022",
+    role: "WordPress Developer - Internship",
+    company: "Adex web Technology",
+    desc: "Designed and managed client websites with WordPress, HTML, and CSS.",
+    current: false,
+  },
   ];
 
   return (
