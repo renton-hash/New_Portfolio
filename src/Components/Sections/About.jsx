@@ -8,14 +8,14 @@ export const About = () => {
 
   const experience = [
     {
-      period: "2024 — Present",
+      period: "February, 2024 — Present",
       role: "Frontend Developer",
       company: "Doyenify Academy",
-      desc: "Developed and shipped UI/UX designs using React, TypeScript, and Tailwind CSS.",
+      desc: "Developed and implementing UI/UX designs using React, TypeScript, and Tailwind CSS.",
       current: true,
     },
     {
-      period: "September, 2023 — December, 2025",
+      period: "September, 2023 — January, 2026",
       role: "WordPress Developer — Mid-Level",
       company: "Knopee Technologies",
       desc: "Designed and managed client websites with WordPress,php, and CSS.",
