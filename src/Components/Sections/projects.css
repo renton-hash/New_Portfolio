@@ -1,0 +1,242 @@
+/* ── Root ───────────────────────────────────────────────────────────────────── */
+.projects-root {
+  font-family: 'DM Sans', sans-serif;
+  background: #05080f;
+  padding: 6rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-orb {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(20, 184, 166, 0.07) 0%, transparent 70%);
+  bottom: -200px;
+  left: -200px;
+  pointer-events: none;
+}
+
+.projects-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #14b8a6;
+  margin-bottom: 1rem;
+}
+
+.section-label-line {
+  width: 28px;
+  height: 1px;
+  background: #14b8a6;
+}
+
+.section-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
+  font-style: italic;
+  color: #f1f0ee;
+  margin: 0 0 1rem;
+  line-height: 1.1;
+}
+
+.section-heading span {
+  color: transparent;
+  -webkit-text-stroke: 1.2px rgba(99, 102, 241, 0.6);
+}
+
+.projects-subheading {
+  font-size: 0.95rem;
+  color: #5d6b7d;
+  font-weight: 300;
+  margin: 0 0 3rem;
+  max-width: 500px;
+}
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.project-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: rgba(99, 102, 241, 0.25);
+  transform: translateY(-3px);
+}
+
+.project-card--placeholder {
+  border-style: dashed;
+  border-color: rgba(255, 255, 255, 0.05);
+  opacity: 0.5;
+}
+
+.project-card--placeholder:hover {
+  border-color: rgba(255, 255, 255, 0.1);
+  transform: none;
+}
+
+
+.project-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.project-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 40px;
+  padding: 3px 10px;
+}
+
+.project-badge--live {
+  color: #14b8a6;
+  background: rgba(20, 184, 166, 0.1);
+  border: 1px solid rgba(20, 184, 166, 0.2);
+}
+
+.project-badge--wip {
+  color: #f59e0b;
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.project-badge-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+
+.project-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.975rem;
+  font-weight: 500;
+  color: #e2e8f0;
+  margin: 0;
+  line-height: 1.35;
+}
+
+
+.project-desc {
+  font-size: 0.82rem;
+  color: #6b7a8d;
+  line-height: 1.65;
+  font-weight: 300;
+  margin: 0;
+  flex: 1;
+}
+
+
+.project-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-pill {
+  font-size: 0.72rem;
+  font-weight: 400;
+  border-radius: 40px;
+  padding: 3px 10px;
+  border: 1px solid transparent;
+}
+
+.pill--indigo {
+  color: #a5b4fc;
+  background: rgba(99, 102, 241, 0.1);
+  border-color: rgba(99, 102, 241, 0.2);
+}
+
+
+.pill--teal {
+  color: #5eead4;
+  background: rgba(20, 184, 166, 0.1);
+  border-color: rgba(20, 184, 166, 0.2);
+}
+
+
+.pill--amber {
+  color: #fcd34d;
+  background: rgba(245, 158, 11, 0.1);
+  border-color: rgba(245, 158, 11, 0.2);
+}
+
+.project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #6366f1;
+  text-decoration: none;
+  margin-top: auto;
+  transition: color 0.2s ease, gap 0.2s ease;
+  width: fit-content;
+}
+
+.project-link:hover {
+  color: #a5b4fc;
+  gap: 8px;
+}
+
+.project-link-disabled {
+  font-size: 0.78rem;
+  font-weight: 400;
+  color: #3a4251;
+  margin-top: auto;
+  letter-spacing: 0.04em;
+}
+
+
+@media (max-width: 768px) {
+  .projects-root {
+    padding: 4rem 1.5rem;
+  }
+}

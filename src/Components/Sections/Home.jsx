@@ -1,42 +1,95 @@
-import { OnScroll } from "./OnScroll";
+import { useEffect } from "react"
+import "./Home.css";
+import profilePhoto from "../../images/Assets/nano-banana-2025-09-24T13-26-45.png"; // 👈 replace with your actual filename
 
 export const Home = () => {
-  return (
-    <section
-      id="home"
-      className="min-h-screen flex justify-center relative pt-12"
-    >
-      <OnScroll>
-        <div className="text-center -mt-16 z-10 px-6 md:px-12">
-          <h2 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent leading-tight">
-            Hello, I am Anthony
-          </h2>
+  useEffect(() => {
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href =
+      "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=DM+Sans:wght@300;400;500&display=swap";
+    link.id = "hero-fonts";
+    if (!document.getElementById("hero-fonts")) {
+      document.head.appendChild(link);
+    }
+  }, []);
 
-          <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
-            I am a frontend developer who is committed to creating clean and scalable web applications.
-            My aim is to offer solutions by building delightful and user-friendly experiences.
+  return (
+    <section id="home" className="hero-root">
+      <div className="grid-bg" />
+      <div className="orb-1" />
+      <div className="orb-2" />
+
+      <div className="floating-badge">
+        <div className="badge-dot" />
+        <span className="badge-text">Open to opportunities</span>
+      </div>
+
+      <div className="hero-inner">
+
+        <div className="hero-text">
+          <div className="eyebrow">
+            <div className="eyebrow-dot" />
+            FullStack Developer
+          </div>
+
+          <h1 className="hero-heading">
+            Hello, I am<br />
+            <span className="accent">Anthony</span>
+          </h1>
+
+          <div className="divider" />
+
+          <p className="hero-body">
+            Committed to crafting clean, scalable web applications — with a
+            focus on delightful interfaces and user-centered experiences that
+            are as thoughtful under the hood as they are on the surface.
           </p>
 
-          <div className="flex justify-center space-x-4">
-            <a
-              href="#projects"
-              className="bg-blue-600 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden 
-              hover:-translate-y-0.5 
-              hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
-            >
+          <div className="cta-row">
+            <a href="#projects" className="btn-primary">
               View Projects
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                <path
+                  d="M2 7h10M8 3l4 4-4 4"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
             </a>
-
-            <a
-              href="#contact"
-              className="border border-blue-500/50 text-blue-500 py-3 px-6 rounded font-medium transition-all duration-200 
-              hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-600/20"
-            >
+            <a href="#contact" className="btn-ghost">
               Contact Me
             </a>
           </div>
+
+          <div className="stats-row">
+            <div>
+              <div className="stat-num">4+</div>
+              <div className="stat-label">Years exp.</div>
+            </div>
+            <div>
+              <div className="stat-num">20+</div>
+              <div className="stat-label">Projects</div>
+            </div>
+            <div>
+              <div className="stat-num">100%</div>
+              <div className="stat-label">Committed</div>
+            </div>
+          </div>
         </div>
-      </OnScroll>
+
+        {/* ── Photo ── */}
+        <div className="photo-wrapper">
+          <div className="photo-glow" />
+          <div className="photo-ring" />
+          <div className="photo-frame">
+            <img src={profilePhoto} alt="Anthony" />
+          </div>
+        </div>
+
+      </div>
     </section>
   );
 };

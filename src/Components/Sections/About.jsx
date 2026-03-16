@@ -1,88 +1,121 @@
 import { OnScroll } from "./OnScroll";
+import "./About.css";
+
 export const About = () => {
+  const frontendSkills = ["React", "Next.js", "TypeScript", "Tailwind CSS", "WordPress", "HTML", "CSS", "JavaScript"];
+  const backendSkills = ["Node.js", "Express", "PHP"];
+  const softSkills = ["Search Engine Optimization (SEO)", "Newsletter"];
 
-    const frontendSkills = [
-            "React",
-            "Nextjs",
-            "Typescript",
-            "TailwindCSS",
-            "WordPress",
-        ];
-    
-    return (
+  const experience = [
+    {
+      period: "2024 — Present",
+      role: "Frontend Developer",
+      company: "Doyenify Academy",
+      desc: "Developed and shipped UI/UX designs using React, TypeScript, and Tailwind CSS.",
+      current: true,
+    },
+    {
+      period: "September, 2023 — December, 2025",
+      role: "WordPress Developer — Mid-Level",
+      company: "Knopee Technologies",
+      desc: "Designed and managed client websites with WordPress,php, and CSS.",
+      current: true,
+    },
+  ];
 
-        <section id="about" 
-        className="min-h-screen -mt-48 flex items-center justify-center py-20"
-        >
-<OnScroll>
-        <div className="max-w-3xl mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-        {" "}
-        About Me
-        </h2>
+  return (
+    <section id="about" className="about-root">
+      <div className="about-orb" />
+      <OnScroll>
+        <div className="about-inner">
 
-        <div className="rounded-xl p-8 overflow-hidden border-white/10 border hover:-translate-y-1 transition-all">
-            <p className="text-gray-300 mb-6">
-                A passionate self-taught developer with over 2 years expertise in 
-                building scalable web applications and creating innovative solutions.
-            </p>
+          <div className="section-label">
+            <div className="section-label-line" />
+            Who I am
+          </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-6 px-4 sm:px-6 lg:px-8">
-  <div className="rounded-xl p-4 sm:p-6 hover:-translate-y-1 transition-all flex flex-col items-center justify-center text-center dark:bg-neutral-900 shadow-sm w-full">
-    <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-4">Frontend</h3>
-    <div className="flex flex-wrap justify-center gap-2 ">
-      {frontendSkills.map((tech, key) => (
-        <span
-          key={key}
-          className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full
-          hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition whitespace-nowrap"
-        >
-          {tech}
-        </span>
-      ))}
-    </div>
-  </div>
-</div>
+          <h2 className="section-heading">
+            About <span>Me</span>
+          </h2>
 
+          <p className="about-bio">
+            A passionate self-taught fullstack developer with over 3 years of expertise
+            building scalable web applications and crafting innovative,
+            user-centered solutions from the ground up.
+          </p>
 
+          <div className="about-two-col">
 
+            {/* Skills */}
+            <div className="about-card">
+
+              <div className="stack-section">
+                <div className="card-title">
+                  <span className="card-title-dot card-title-dot--frontend" />
+                  Frontend stack
+                </div>
+                <div className="skills-grid">
+                  {frontendSkills.map((skill, i) => (
+                    <span key={i} className="skill-pill skill-pill--frontend">{skill}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="skills-divider" />
+
+              <div className="stack-section">
+                <div className="card-title">
+                  <span className="card-title-dot card-title-dot--backend" />
+                  Backend stack
+                </div>
+                <div className="skills-grid">
+                  {backendSkills.map((skill, i) => (
+                    <span key={i} className="skill-pill skill-pill--backend">{skill}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="skills-divider" />
+
+              <div className="stack-section">
+                <div className="card-title">
+                  <span className="card-title-dot card-title-dot--soft" />
+                  Soft skills
+                </div>
+                <div className="skills-grid">
+                  {softSkills.map((skill, i) => (
+                    <span key={i} className="skill-pill skill-pill--soft">{skill}</span>
+                  ))}
+                </div>
+              </div>
+
+            </div>
+
+            {/* Timeline */}
+            <div className="about-card">
+              <div className="card-title">
+                <span className="card-title-dot card-title-dot--frontend" />
+                Work experience
+              </div>
+              <div className="timeline">
+                {experience.map((item, i) => (
+                  <div key={i} className="timeline-item">
+                    <div className={`timeline-dot ${item.current ? "timeline-dot--current" : ""}`} />
+                    <div className={`timeline-period ${item.current ? "timeline-period--current" : ""}`}>
+                      {item.period}
+                      {item.current && <span className="timeline-badge">Active</span>}
+                    </div>
+                    <div className="timeline-role">{item.role}</div>
+                    <div className="timeline-company">{item.company}</div>
+                    <div className="timeline-desc">{item.desc}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+          </div>
         </div>
-{/* The certification is not ready even though I am a self-taught developer */}
-      <div className="grid-cols-2 overflow-hidden gap-6 mt-8">
-    
-    {/*<div className="p-2 rounded-xl border-white/10 border 
-    hover:-translate-y-1 transition-all">
-<h3 className="text-xl text-center font-bold mb-4"> Certifications </h3>
-
-    </div>
-    */}
-    <div className=" grid grid-col p-2 overflow-hidden rounded-xl border-white/10 border 
-    hover:-translate-y-1 transition-all">
-<h3 className="text-xl text-center font-bold mb-4">Work Experience</h3>
-<div className="space-y-4 text-gray-300">
- 
- <div>
- <h4 className="font-semibold">Frontend Developer at Devs Corner Startup (2025 - Present) </h4>
- <p>Developing and Implementing UI/UX designs with nextJs, reactJs, typescript and TailwindCSS</p>
- </div>
-
- <div>
- <h4 className="font-semibold">Frontend Developer (Intern/Entry Level) at doyenify Academy (2024 - 2025) </h4>
- <p>Developing and Implementing UI/UX designs with react, typescript and TailwindCSS</p>
- </div>
-
- <div>
- 
-
- <h4 className="font-semibold">WordPress (Intern/Entry Level) at Knopee Technologies (2023 - 2025) </h4><p>Designing and managing clients websites.</p>
-   
- </div>
-</div>
-    </div>
-
-</div>
-        </div>
-        </OnScroll>
-        </section>
-    );
-}
+      </OnScroll>
+    </section>
+  );
+};
