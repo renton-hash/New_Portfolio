@@ -66,11 +66,11 @@ export const Home = () => {
 
           <div className="stats-row">
             <div>
-              <div className="stat-num">4+</div>
+              <div className="stat-num">3+</div>
               <div className="stat-label">Years exp.</div>
             </div>
             <div>
-              <div className="stat-num">20+</div>
+              <div className="stat-num">4+</div>
               <div className="stat-label">Projects</div>
             </div>
             <div>
